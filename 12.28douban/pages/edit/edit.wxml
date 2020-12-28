@@ -1,0 +1,22 @@
+<!--pages/edit/edit.wxml-->
+<view class="title">
+{{data.name}}
+</view>
+<view class="desc">
+{{data.desc}}
+</view>
+<view class="num">
+{{data.num}}条评论
+</view>
+<block wx:for="{{content}}" wx:key="item">
+<view class="content">
+{{item.content}}
+</view>
+</block>
+
+<form action="" bindsubmit="formSubmit" >
+<input  type="text" name="comment" placeholder="评论。。。"/>
+<button form-type="submit">评论</button>
+</form>
+<button open-type="share">转发</button>
+

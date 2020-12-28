@@ -1,0 +1,5 @@
+/* pages/edit/edit.wxss */
+.content{
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
+}

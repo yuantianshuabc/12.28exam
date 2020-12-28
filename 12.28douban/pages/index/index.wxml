@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="reying"> 
+  <view class="top">
+<text class="left">影院热映</text>
+<text class="middle">查看更多</text>
+<text class="right">></text>
+</view>
+<view class="box">
+  <block wx:for="{{movie}}" wx:key="item">
+  <navigator url="/pages/edit/edit?id={{item.id}}" data-id="" open-type="navigate">
+  <view class="movie">
+<view class="img">
+<image src="{{item.image}}"></image>
+</view>
+<view class="title">
+{{item.name}}
+</view>
+</view>
+</navigator>
+</block>
+</view>
+</view>
